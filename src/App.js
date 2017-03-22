@@ -2,7 +2,16 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const getForms = async () => {
+  const request = await fetch('https://project-close.now.sh/api/forms');
+  const data = await request.json();
+  console.log('data', data); // eslint-disable-line no-console
+};
+
 class App extends Component {
+  componentDidMount() {
+    getForms();
+  }
   render() {
     return (
       <div className="App">

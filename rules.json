@@ -1,0 +1,7 @@
+{
+  "rules": [
+    { "pathname": "/api/forms", "dest": "project-close-api.now.sh" },
+    { "pathname": "/api/forms/*", "dest": "project-close-api.now.sh" },
+    { "dest": "project-close-dcipozydmg.now.sh" }
+  ]
+}
